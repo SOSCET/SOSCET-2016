@@ -1,0 +1,23 @@
+{
+  "name": "soscet-2016",
+  "description": "SOSCET Website 2016",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soscet/SOSCET-2016.git"
+  },
+  "author": "fateyan<fateyan.tw@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/soscet/SOSCET-2016/issues"
+  },
+  "dependencies": {
+    "grunt": "*"
+  },
+  "devDependencies": {
+    "grunt-semantic-ui": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-git-deploy": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jade": "*"
+  }
+}
