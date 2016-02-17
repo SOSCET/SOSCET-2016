@@ -10,7 +10,8 @@
     "url": "https://github.com/soscet/SOSCET-2016/issues"
   },
   "dependencies": {
-    "grunt": "*"
+    "grunt": "*",
+    "bower": "*"
   },
   "devDependencies": {
     "grunt-semantic-ui": "*",
