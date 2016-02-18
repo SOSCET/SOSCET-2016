@@ -14,7 +14,7 @@ module.exports = (grunt) ->
     stylus:
       main:
         options:
-          paths: true
+          paths: ['src/style']
           compress: true
         files:
           'public/assets/style/main.css':'src/style/main.styl'
