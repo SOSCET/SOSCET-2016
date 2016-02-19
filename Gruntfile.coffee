@@ -37,6 +37,7 @@ module.exports = (grunt) ->
           'assets/**'
         ],
         tasks: [
+          'jade:main'
           'stylus:main'
           'copy:main'
         ],
