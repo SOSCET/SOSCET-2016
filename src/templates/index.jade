@@ -4,10 +4,21 @@ html(lang='zh-Hant')
     meta(charset='UTF-8')
     title SOSCET | 東部開源學生社群
   body
-    header.header
+    img.bkg(src="assets/images/pattern.svg")
+    .ui.top.fixed.menu#menu
+      a.item(href='#header')
+        | SOSCET
+      a.item(href='#about')
+        | 關於我們
+      a.item(href='#opensource')
+        | 什麼是開源？
+      a.item(href='recent')
+        | 近期活動 
+      a.item(href='contact')
+        | 聯絡我們＆加入我們
+    header#header
       h1 東部開源學生社群
       h3 SOSCET
-
     footer
       h5 Students' Open Source Community of Eastern Taiwan
       .md-col-12
@@ -23,3 +34,14 @@ html(lang='zh-Hant')
     link(rel='stylesheet' type='text/css' href='assets/semantic/css/semantic-ui.css')
     link(rel='stylesheet' type='text/css' href='assets/style/main.css')
     link(rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    script(type='text/javascript' src='assets/semantic/js/semantic-ui.js')
+    script(type='text/javascript').
+      document.addEventListener('click', function(e) {
+        var allEl = document.querySelectorAll('.ui > .item');
+        for(var i in allEl)
+          if(allEl.hasOwnProperty(i))
+            allEl[i].classList.remove('active');
+
+        e.srcElement.classList.add('active');
+      }, '.item')
+
