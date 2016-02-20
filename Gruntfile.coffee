@@ -43,6 +43,15 @@ module.exports = (grunt) ->
         ],
         options:
           livereload: true
+      semantic:
+        files: [
+          'semantic-config.json'
+        ],
+        tasks: [
+          'semantic-ui'
+        ],
+        options:
+          livereload: true
     git_deploy:
       main:
         options:
@@ -61,6 +70,6 @@ module.exports = (grunt) ->
   grunt.initConfig conf
 
   grunt.registerTask 'default', ['stylus', 'copy', 'semantic-ui', 'jade']
-  grunt.registerTask 'w', ['watch']
+  grunt.registerTask 'w', ['watch:main', 'watch:semantic']
   grunt.registerTask 'deploy', ['git_deploy']
 
