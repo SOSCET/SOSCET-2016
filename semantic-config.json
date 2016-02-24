@@ -9,6 +9,8 @@
   "elements": [
     "container",
     "segment",
-    "header"
+    "header",
+    "list",
+    "icon"
   ]
 }
