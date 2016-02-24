@@ -5,5 +5,10 @@
   ],
   "collections": [
     "menu"
+  ],
+  "elements": [
+    "container",
+    "segment",
+    "header"
   ]
 }
