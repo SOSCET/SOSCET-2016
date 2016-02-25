@@ -87,5 +87,13 @@ html(lang='zh-Hant')
             allEl[i].classList.remove('active');
 
         e.srcElement.classList.add('active');
-      }, '.item')
+      }, '.item');
+      document.addEventListener('scroll', function(e) {
+        var el = document.getElementById('menu');
+        if(e.path[1].pageYOffset >= 60)
+          el.classList.add('fixed');
+        else
+          el.classList.remove('fixed');
+
+      });
 
