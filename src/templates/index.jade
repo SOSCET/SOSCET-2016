@@ -5,21 +5,18 @@ html(lang='zh-Hant')
     title SOSCET | 東部開源學生社群
   body
     .bkg
-    .ui.menu.top.secondary.pointing.stackable#menu
-      a.item.brand
-        | SOSCET
-      .ui.menu.right
-          a.item.active(href='#header')
-            | 東部開源學生社群
-          a.item(href='#about')
-            | 關於我們
-          a.item(href='#opensource')
-            | 什麼是開源？
-          a.item(href='#recent')
-            | 近期活動 
-          a.item(href='#contact')
-            | 聯絡我們＆加入我們
-    header#header.ui.center.aligned.container.header
+    .ui.stackable.container.menu 
+      a.item.active(href='#header')
+        | 東部開源學生社群
+      a.item(href='#about')
+        | 關於我們
+      a.item(href='#opensource')
+        | 什麼是開源？
+      a.item(href='#recent')
+        | 近期活動 
+      a.item(href='#contact')
+        | 聯絡我們＆加入我們
+    header#header.ui.center.aligned.header
       h1.ui.header 東部開源學生社群
       h3.ui.header SOSCET
     .ui.segment.raised.very.padded.text.container#about
@@ -75,10 +72,11 @@ html(lang='zh-Hant')
         a(title='contact At soscet.org', href='mailto:contact@soscet.org')
           i.fa.fa-2x.fa-envelope
 
-    link(rel='stylesheet' type='text/css' href='assets/semantic/css/semantic-ui.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js')
+    link(rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js')
     link(rel='stylesheet' type='text/css' href='assets/style/main.css')
     link(rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-    script(type='text/javascript' src='assets/semantic/scripts/semantic.js')
     script(type='text/javascript').
       document.addEventListener('click', function(e) {
         var allEl = document.querySelectorAll('.ui > .item');
@@ -88,12 +86,4 @@ html(lang='zh-Hant')
 
         e.srcElement.classList.add('active');
       }, '.item');
-      document.addEventListener('scroll', function(e) {
-        var el = document.getElementById('menu');
-        if(e.path[1].pageYOffset >= 60)
-          el.classList.add('fixed');
-        else
-          el.classList.remove('fixed');
-
-      });
 

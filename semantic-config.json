@@ -4,7 +4,8 @@
     "site"
   ],
   "collections": [
-    "menu"
+    "menu",
+    "grid"
   ],
   "elements": [
     "container",
