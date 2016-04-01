@@ -8,7 +8,7 @@ module.exports = (grunt) ->
           dest: 'public/'
         }
         {
-          src: ['CNAME']
+          src: ['src/CNAME']
           dest: 'public/'
         }]
     stylus:
