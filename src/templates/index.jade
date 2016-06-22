@@ -3,6 +3,9 @@ html(lang='zh-Hant')
   head
     meta(charset='UTF-8')
     title SOSCET | 東部開源學生社群
+    link(rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css')
+    link(rel='stylesheet' type='text/css' href='assets/style/main.css')
+    link(rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
   body
     .bkg
     .ui.stackable.container.menu 
@@ -79,17 +82,14 @@ html(lang='zh-Hant')
           i.fa.fa-2x.fa-envelope
 
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js')
-    link(rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css')
     script(src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js')
-    link(rel='stylesheet' type='text/css' href='assets/style/main.css')
-    link(rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
     script(type='text/javascript').
-      document.addEventListener('click', function(e) {
+      /*document.addEventListener('click', function(e) {
         var allEl = document.querySelectorAll('.ui > .item');
         for(var i in allEl)
           if(allEl.hasOwnProperty(i))
             allEl[i].classList.remove('active');
 
         e.srcElement.classList.add('active');
-      }, '.item');
+      }, '.item');*/
 
